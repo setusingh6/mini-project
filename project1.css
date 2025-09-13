@@ -1,0 +1,682 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+body{
+    background-color:white;
+}
+#main{
+    height:100%;
+    width:100%;
+    background-color:white;
+    position:relative;
+    padding-top: 0.1px;
+}
+#nav{
+    height:11vh;
+    width:100%;
+    margin-top: 40px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+
+}
+#nav h1{
+    height: 100%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     font-family: "Limelight", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -3px;;
+}
+#nav h1::after{
+    content: " ©";
+    font-weight: 100;
+    margin-left: 0.4vw;
+
+}
+/* #nav h1::before{
+    content: "model management";
+    font-size: 10px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 83%;
+    right: 87%;
+    
+    letter-spacing: 0px;
+    font-family: 'Courier New', Courier, monospace;
+
+} */
+#nav h2{
+    height: 100%;
+    width:22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right:2px solid #000;
+    font-size: 26px;
+    font-weight: 600;
+}
+#nav h2:nth-last-child(1){
+    width:10%;
+    /* background-color: red; */
+}
+#nav h2:nth-last-child(2){
+    width:29%;
+    /* background-color: red; */
+}
+#center{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    padding:4vw;
+    position: relative;
+}
+#content{
+    height:100%;
+    width:100%;
+    /* background-color: blue; */
+    position: relative;
+}
+#content video{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overplay{
+    height:52%;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    /* background-color: red; */
+    padding:1vw;
+    color:#fff;
+
+}
+#over1{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom:2vw;
+}
+#over1 h1{
+     font-family: "Limelight", sans-serif;
+     font-size: 3.6vw;
+     font-weight: 100;
+}
+#over1 h2{
+     font-size: 3vw;
+     padding:1.5vw 2vw;
+     border-radius: 50%;
+     border:1.5px solid #fff;
+     /* border-bottom: 1px solid #fff; */
+}
+#over2{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-top:2px solid #fff;
+     padding: 1.5vw 0;
+}
+#over2 h4{
+     font-size:1.3vw;
+     font-weight:500;
+}
+#over2 img{
+    height:3vw;
+}
+#scroll{
+    height: 40vh;
+    width:100%;
+    /* background-color: red; */
+    padding: 1vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    height:100%;
+    width: 110%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 1.4vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    /* display: none; */
+    height: 100%;
+    border-radius: 50%;
+    width:14%;
+    object-fit: cover;
+    object-position:top;
+    margin: 1.3vw;
+}
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    } 
+}
+#alphabet{
+    height:10vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:1.1vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+#alphabet h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 2px solid #000;
+    letter-spacing: 4px;
+    margin-right: 1.5vw;
+}
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    /* background-color: yellow; */
+    border: 1px solid #00000000;
+    cursor:pointer;
+    transition: all ease 0.2s;
+}
+#alphabet h6:hover{
+     border: 1px solid #000;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding:2vw;
+    /* background-color: yellow; */
+
+}
+#page2-part1{
+    height:93%;
+    width:50%;
+    /* padding-left:4vw ; */
+    /* background-color: red; */
+}
+#page2-part1 img{
+    height:100%;
+    width:90%;
+    /* object-fit: cover; */
+
+}
+#page2-part1-bottom{
+    margin-top: 0.5vw;
+
+}
+#page2-part1-bottom h1{
+    font-size:2.6vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#page2-part2{
+    height:100%;
+    width:40%;
+    padding-left: 5vw;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    
+
+}
+#page2-part2 img{
+    height: 70%;
+    width: 90%;
+    object-fit: cover;
+    object-position: top;
+
+}
+#page2-part2-left{
+    height:100%;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+#page2-part2-left h1{
+    font-size: 1.5vw;
+    font-weight: 600;
+    line-height: 1.7vw;
+    margin-top: 1vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#page2-part2-left h5{
+    font-size: 1vw;
+    font-weight: 600;
+    line-height: 1.2vw;
+    margin-top: 1vw;
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    padding:3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page3-part1{
+    height:100%;
+    width:40%;
+    /* background-color: yellow; */
+
+}
+#page3-part2{
+    height:100%;
+    width:50%;
+    /* background-color: blue; */
+
+}
+#gola{
+    /* background-color:white; */
+    height:75%;
+    width:100%;
+    padding:4vw;
+    /* background-color:steelblue; */
+    padding: 4vw;
+    padding-left: 8vw;
+}
+#gola img{
+    
+    height: 85%;
+    width: 75%;
+    animation-name: go-anime;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes go-anime{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    } 
+}
+
+#page3-text{
+    width:100%;
+    height:100%;
+    font-size: 1vw;
+    padding: 2vw;
+    font-weight: 400;
+}
+#page3-part2 img{
+    width: 80%;
+    height: 100%;
+}
+#page4{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 5vh 10vh;
+
+}
+#page4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page5{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding: 3vw 4vw;
+}
+#page5>h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+    /* font-weight: 900; */
+    margin-bottom: 7vh;
+}
+.elem{
+    height: 15.5vh;
+    width: 100%;
+    /* background-color: red; */
+    border-top: 2px solid #000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+    transition: all ease 0.7s;
+}
+.elem img{
+    height:95px;
+    width:95px;
+    border-radius: 50%;
+    position: absolute;
+    left:12%;
+    opacity: 0;
+    transition: all ease 0.7s;
+    object-position:top ;
+    object-fit: cover;
+}
+.elem h4{
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 6%;
+}
+.elem .elem-part2{
+    width: 45%;
+}
+.elem-part2 h1{
+    font-size: 2.7vw;
+    font-weight:500;
+}
+.elem-part2 h5{
+    font-size: 0.8vw;
+    font-weight:600;
+    text-transform: uppercase;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid #000;
+}
+.elem:nth-last-child(1) img{
+    left:40%
+}
+.elem:nth-last-child(3) img{
+    left:40%
+}
+.elem:hover img{
+    opacity:1;
+    left:24%;
+}
+
+#page6{
+    height:100%;
+    width:100%;
+    /* background-color: yellow; */
+    padding:2vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page6-left{
+    height:100%;
+    width:40%;
+    /* background-color: red; */
+    /* padding-left: 5vw;; */
+
+}
+#page6-left img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+#page6-right{
+    height: 100%;
+    width: 55%;
+    /* background-color: red; */
+}
+#page6-up{
+    height:8%;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: purple; */
+}
+#page6-up h1{
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+#page6-do{
+    height:13%;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 1.7vw;
+}
+#page6-do h2{
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+#page6-center{
+    height:12%;
+    width: 100%;
+    /* background-color: green; */
+}
+#page6-center p{
+    margin-top: 2vw;
+}
+#page6-bottom{
+    height:52%;
+    width: 100%;
+    /* background-color: #d2691e; */
+    margin-top: 2.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#page6-img1 {
+    height: 100%;
+    width: 55%;
+    /* object-fit: cover; */
+}
+#page6-img1 img{
+     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#page6-img2 {
+    height: 100%;
+    width: 40%;
+    /* object-fit: cover; */
+}
+#page6-img2 img{
+     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#page7{
+    height:100%;
+    width:100%;
+    /* background-color: aqua; */
+    padding: 5vw;
+}
+#page7 img{
+       
+    height: 100%;
+    width: 100%;
+    object-position: top;
+    
+}
+#page8{
+    height: 100%;
+    width: 100%;
+    /* background-color: violet; */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#page8-left{
+    height:100%;
+    width: 55%;
+    padding: 2vw;
+    padding-left: 4vw;
+    /* background-color: yellowgreen; */
+    
+}
+#page8-left img{
+    height: 100%;
+    width: 100%;
+}
+#page8-right {
+      height: 100%;
+      width: 45%;
+      padding-right: 5vw;
+      margin: 4vw;
+
+}
+
+#page8-right img{
+    height: 60%;
+    width: 100%;
+    /* background-color: red; */
+}
+#page8-bottom{
+    height: 35%;
+    width: 100%;
+    /* background-color: blue; */
+    margin-top: 1.3vw;
+    display: flex;
+    justify-content: space-between;
+}
+#page8-bottom-left{
+    font-size: 1vw;
+    line-height: 1.5vw;
+
+}
+#page8-bottom-right{
+    font-size: 1.2vw;
+    line-height: 1.3vw;
+    font-weight: 200;
+    margin-right: 1vw;
+}
+#marque{
+    /* height: 15vh; */
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    padding: 0.8vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+#marque h1{
+    display: inline-block;
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color:transparent;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 16px;
+    letter-spacing: 3px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes move{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+
+}
+#footer{
+    height: 100%;
+    width: 100%;
+    /* background-color:red; */
+    display:flex;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+}
+#footer1{
+    height:100%;
+    width:20%;
+    /* background-color: yellow; */
+    padding:3vw;
+}
+#footer1 h1{
+    font-size: 3vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 3vw 4vw;
+
+}
+#footer2{
+    height: 100%;
+    width:35%;
+    /* background-color: aqua; */
+
+}
+#footer-p{
+    height: 30%;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    
+}
+
+#box{
+    height:2vw;
+    width: 2vw;
+    border-radius: 50%;
+    border:1.5px solid #000;
+   margin-right: 1vw;
+    /* background-color: skyblue; */
+     margin-top: 2.2vw;
+     
+}
+#box h3{
+    font-size: 1vw;
+    position: relative;
+    left: 0.6vw;
+    top:0.4vw;
+   
+    
+}
+#footer-p h2{
+    font-size: 1.7vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2vw;
+}
+
+#footer3{
+    height: 100%;
+    width:35%;
+    /* background-color:blue; */
+}
+#footer-p-im{
+    height: 70%;
+    width: 100%;
+    /* background-color: brown; */
+}
+#footer-p-im img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    object-position: top;
+}
+
